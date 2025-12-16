@@ -34,8 +34,15 @@
 }
 
 .logo {
-  margin-bottom: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
   z-index: 1;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
 }
 
 .tagline {

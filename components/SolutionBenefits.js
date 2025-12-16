@@ -95,7 +95,7 @@ const SolutionBenefits = () => {
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.8, delay: 1 }}
         >
-          <Image src="/robot.png" alt="KBot robot illustration" width={200} height={200} />
+          <Image src="/robot.png" alt="KBot robot illustration" width={300} height={500} />
         </motion.div>
       </div>
     </section>
