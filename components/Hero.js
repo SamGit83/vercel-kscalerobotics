@@ -57,7 +57,7 @@ const Hero = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, delay: 1.0 }}
       >
-        <Image src="/robot.png" alt="Robot illustration in a hotel lobby" width={300} height={300} />
+        <Image src="/robot.png" alt="Robot illustration in a hotel lobby" width={300} height={500} />
       </motion.div>
       <motion.div
         className={styles.ctaContainer}
