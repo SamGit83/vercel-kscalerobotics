@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { motion, useInView } from 'framer-motion';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import styles from './SolutionBenefits.module.css';
@@ -94,8 +95,7 @@ const SolutionBenefits = () => {
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.8, delay: 1 }}
         >
-          {/* Robot image placeholder */}
-          <div className={styles.placeholder}>Robot Image Placeholder</div>
+          <Image src="/robot.png" alt="KBot robot illustration" width={200} height={200} />
         </motion.div>
       </div>
     </section>

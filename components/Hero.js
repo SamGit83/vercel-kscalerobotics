@@ -52,6 +52,14 @@ const Hero = () => {
         Solve queue delays and staff gaps with fun, personalized AI—20-30% satisfaction lift. Request a Pilot Today.
       </motion.p>
       <motion.div
+        className={styles.robotImage}
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, delay: 1.0 }}
+      >
+        <Image src="/robot.png" alt="Robot illustration in a hotel lobby" width={300} height={300} />
+      </motion.div>
+      <motion.div
         className={styles.ctaContainer}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
