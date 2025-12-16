@@ -73,15 +73,17 @@ const HowItWorks = () => {
         >
           {/* Video embed or GIF placeholder */}
           <div className={styles.videoPlaceholder}>
-            <iframe
+            <video
+              controls
+              autoplay
+              muted
+              loop
+              preload="metadata"
+              src="/robot.MP4"
+              title="Demo Video"
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Placeholder video
-              title="Demo Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            ></video>
           </div>
         </motion.div>
         <motion.div
