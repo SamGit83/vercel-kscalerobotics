@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+.pilotForm {
+  width: 100%;
+  background: linear-gradient(135deg, #000011 0%, #001122 50%, #000011 100%);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.headline {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.body {
+  font-size: 1rem;
+  color: #cccccc;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.2);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.input,
+.select,
+.textarea {
+  padding: 12px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.ctaButton {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  align-self: center;
+}
+
+.ctaButton:hover {
+  background: #0056b3;
+}
+
+.privacy {
+  font-size: 0.9rem;
+  color: #cccccc;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Desktop responsive */
+@media (min-width: 768px) {
+  .pilotForm {
+    padding: 80px 20px;
+  }
+
+  .headline {
+    font-size: 2.5rem;
+  }
+
+  .body {
+    font-size: 1.2rem;
+  }
+
+  .form {
+    padding: 40px;
+  }
+
+  .input,
+  .select,
+  .textarea {
+    padding: 12px;
+  }
+
+  .ctaButton {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
+}

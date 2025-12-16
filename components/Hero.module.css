@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #000011 0%, #001122 50%, #000011 100%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.backgroundSwirl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 80%, rgba(0, 123, 255, 0.2) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(0, 123, 255, 0.15) 0%, transparent 50%),
+              radial-gradient(circle at 40% 40%, rgba(0, 123, 255, 0.1) 0%, transparent 50%);
+  animation: glowPulse 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowPulse {
+  0% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+.logo {
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.subheadline {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  max-width: 600px;
+  z-index: 1;
+}
+
+.valueTeaser {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  max-width: 500px;
+  z-index: 1;
+}
+
+.ctaContainer {
+  display: flex;
+  gap: 20px;
+  z-index: 1;
+}
+
+.ctaButton {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.exploreButton {
+  background-color: #007bff;
+  color: white;
+}
+
+.exploreButton:hover {
+  background-color: #0056b3;
+}
+
+.requestButton {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.requestButton:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 10px;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .subheadline {
+    font-size: 1rem;
+  }
+
+  .valueTeaser {
+    font-size: 0.9rem;
+  }
+
+  .ctaContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ctaButton {
+    width: 100%;
+  }
+}
