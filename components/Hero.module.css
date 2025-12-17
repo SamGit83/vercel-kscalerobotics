@@ -114,24 +114,29 @@
 /* Mobile responsive */
 @media (max-width: 768px) {
   .hero {
-    padding: 20px;
+    padding: 120px 20px 20px 20px;
     height: auto;
     min-height: 100vh;
   }
 
   .logo {
-    width: 80px;
-    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
   }
 
   .logo img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 
   .tagline {
     font-size: 1.2rem;
     line-height: 1.3;
+    margin-top: 0;
   }
 
   .subheadline {
@@ -151,8 +156,9 @@
 
   .ctaContainer {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     width: 100%;
+    padding: 0 20px;
   }
 
   .ctaButton {
@@ -161,19 +167,8 @@
     font-size: 1rem;
   }
 
-  .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
   .hero {
     text-align: center !important;
-  }
-
-  .ctaContainer {
-    gap: 15px;
-    padding: 0 20px;
   }
 }
 
