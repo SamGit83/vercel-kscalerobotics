@@ -96,12 +96,18 @@ body {
   /* Better spacing for mobile */
   section {
     padding: 40px 15px;
+    text-align: center;
   }
 
   /* Prevent horizontal scrolling */
   img, video, iframe {
     max-width: 100%;
     height: auto;
+  }
+
+  p, div, span {
+    word-break: break-word;
+    max-width: 100%;
   }
 }
 

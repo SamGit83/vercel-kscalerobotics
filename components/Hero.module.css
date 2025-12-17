@@ -160,6 +160,21 @@
     padding: 16px 24px;
     font-size: 1rem;
   }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hero {
+    text-align: center !important;
+  }
+
+  .ctaContainer {
+    gap: 15px;
+    padding: 0 10px;
+  }
 }
 
 /* Extra small devices */

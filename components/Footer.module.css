@@ -98,6 +98,16 @@
   .copyright {
     font-size: 12px;
   }
+
+  .container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /* Extra small devices */

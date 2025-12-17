@@ -197,6 +197,16 @@
   .privacy {
     font-size: 0.8rem;
   }
+
+  .field {
+    text-align: center;
+  }
+
+  .error {
+    display: block;
+    margin: 5px auto 0;
+    text-align: center;
+  }
 }
 
 /* Extra small devices */

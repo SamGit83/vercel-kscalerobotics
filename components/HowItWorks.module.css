@@ -241,6 +241,24 @@
     width: 100%;
     max-width: 300px;
   }
+
+  .timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .stepContent {
+    text-align: center;
+  }
+
+  .step {
+    align-items: center;
+  }
+
+  .videoPlaceholder {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 /* Extra small devices */

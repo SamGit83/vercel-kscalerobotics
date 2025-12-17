@@ -210,6 +210,15 @@
     width: 150px;
     height: 150px;
   }
+
+  .description {
+    text-align: center;
+  }
+
+  .content {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 /* Extra small devices */
