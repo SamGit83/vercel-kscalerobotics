@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 import Head from 'next/head';
+import Navigation from '../components/Navigation';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -8,6 +9,7 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="theme-color" content="#000011" />
       </Head>
+      <Navigation />
       <Component {...pageProps} />
     </>
   );
