@@ -21,14 +21,6 @@ const Hero = () => {
   return (
     <motion.section className={styles.hero} style={{ y }}>
       <div className={styles.backgroundSwirl}></div>
-      <motion.div
-        className={styles.logo}
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-      >
-        <Image src="/logo.png" alt="Kscale Robotics Logo" width={40} height={40} />
-      </motion.div>
       <motion.h1
         className={styles.tagline}
         initial={{ opacity: 0, y: 20 }}

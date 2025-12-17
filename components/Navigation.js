@@ -22,7 +22,7 @@ export default function Navigation() {
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <Link href="/" className={styles.logoLink}>
-          <Image src="/logo.png" alt="Kscale Robotics Logo" width={60} height={30} className={styles.logo} />
+          <Image src="/logo.png" alt="Kscale Robotics Logo" width={60} height={60} className={styles.logo} />
         </Link>
         <div className={`${styles.menu} ${isMenuOpen ? styles.menuOpen : ''}`}>
           <Link href="/" className={styles.navLink}>Home</Link>
