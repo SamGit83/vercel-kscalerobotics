@@ -27,7 +27,7 @@ const Hero = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
       >
-        <Image src="/logo.png" alt="Kscale Robotics Logo" width={60} height={60} />
+        <Image src="/logo.png" alt="Kscale Robotics Logo" width={40} height={40} />
       </motion.div>
       <motion.h1
         className={styles.tagline}
