@@ -94,7 +94,7 @@
 /* Mobile-specific enhancements */
 @media (max-width: 768px) {
   .visionAbout {
-    padding: 40px 15px;
+    padding: 40px 20px;
   }
 
   .container {

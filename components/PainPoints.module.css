@@ -109,7 +109,7 @@
 /* Mobile-specific enhancements */
 @media (max-width: 768px) {
   .painPoints {
-    padding: 40px 15px;
+    padding: 40px 20px;
   }
 
   .headline {

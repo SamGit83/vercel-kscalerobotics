@@ -160,7 +160,7 @@
 /* Mobile-specific enhancements */
 @media (max-width: 768px) {
   .pilotForm {
-    padding: 40px 15px;
+    padding: 40px 20px;
   }
 
   .headline {
@@ -174,7 +174,7 @@
   }
 
   .form {
-    padding: 25px 15px;
+    padding: 25px 20px;
   }
 
   .label {
@@ -220,7 +220,7 @@
   }
 
   .form {
-    padding: 20px 10px;
+    padding: 20px;
   }
 
   .label {

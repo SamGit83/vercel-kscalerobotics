@@ -45,6 +45,7 @@ body {
 /* Global animations and transitions */
 * {
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .fade-in {
@@ -95,7 +96,7 @@ body {
 
   /* Better spacing for mobile */
   section {
-    padding: 40px 15px;
+    padding: 40px 20px;
     text-align: center;
   }
 
