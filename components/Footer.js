@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <Image src="/logo.png" alt="Kscale Robotics Logo" width={100} height={100} className={styles.logo} />
+        <Image src="/logo.png" alt="Kscale Robotics Logo" width={120} height={60} className={styles.logo} />
         <nav className={styles.nav}>
           <Link href="/about">About</Link>
           <Link href="/kbot">KBot</Link>
