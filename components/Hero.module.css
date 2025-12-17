@@ -114,14 +114,16 @@
 /* Mobile responsive */
 @media (max-width: 768px) {
   .hero {
-    padding: 120px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
     height: auto;
     min-height: 100vh;
+    justify-content: flex-start;
   }
 
   .logo {
-    position: relative;
-    top: 20px;
+    position: static;
+    margin-bottom: 40px;
+    margin-top: 20px;
     width: 60px;
     height: 60px;
   }
