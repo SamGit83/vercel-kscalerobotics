@@ -22,7 +22,7 @@ export default async function handler(req, res) {
 
   try {
     await resend.emails.send({
-      from: 'noreply@echargebot.tech', // Assuming this is verified; adjust as needed
+      from: 'testcursorkilo@gmail.com', // Assuming this is verified; adjust as needed
       to: 'contact@echargebot.tech',
       reply_to: email,
       subject: 'New Pilot Form Submission',
