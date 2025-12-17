@@ -84,6 +84,7 @@ Key Sections:
 - Headline: "Ready to Scale Your Interactions?"
 - Body: "Join our pilots for KBot—get early access and shape the future. Tell us your challenges."
 - Form Fields: Name, Email, Company/Role, Location Type (Dropdown: Hotel, Airport/Lounge, Shopping Center), Message.
+Upon submission, the form data is sent as an email to contact@echargebot.tech for processing.
 - CTA Button: "Request Pilot / Get Insights"
 - Privacy Note: "GDPR compliant; we respect your data."
 **Visual:** Subtle robot icon; ensure form is accessible (e.g., labels and error messages).

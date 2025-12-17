@@ -9,17 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "latest",
+    "lucide-react": "latest",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "framer-motion": "latest",
     "react-hook-form": "latest",
-    "tailwindcss": "latest",
-    "lucide-react": "latest"
+    "resend": "^6.6.0",
+    "tailwindcss": "latest"
   },
   "devDependencies": {
     "autoprefixer": "latest",
-    "postcss": "latest",
-    "critters": "latest"
+    "critters": "latest",
+    "postcss": "latest"
   }
 }
