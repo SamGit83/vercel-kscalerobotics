@@ -15,7 +15,7 @@ const PilotForm = () => {
   };
 
   return (
-    <section className={styles.pilotForm}>
+    <section id="pilot-form" className={styles.pilotForm}>
       <div className={styles.container}>
         <motion.h2
           className={styles.headline}

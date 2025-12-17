@@ -12,8 +12,10 @@ const Hero = () => {
   };
 
   const handleRequestDemo = () => {
-    // Placeholder for modal
-    alert('Request Pilot Demo modal placeholder');
+    const element = document.getElementById('pilot-form');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
