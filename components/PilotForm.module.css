@@ -83,6 +83,26 @@
   margin-top: 5px;
 }
 
+.message {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.success {
+  background: rgba(0, 255, 0, 0.1);
+  color: #00ff00;
+  border: 1px solid #00ff00;
+}
+
+.error {
+  background: rgba(255, 107, 107, 0.1);
+  color: #ff6b6b;
+  border: 1px solid #ff6b6b;
+}
+
 .ctaButton {
   background: #007bff;
   color: white;

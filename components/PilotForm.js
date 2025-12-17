@@ -5,13 +5,40 @@ import styles from './PilotForm.module.css';
 
 const PilotForm = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [message, setMessage] = useState('');
+  const [messageType, setMessageType] = useState(''); // 'success' or 'error'
 
-  const onSubmit = (data) => {
-    console.log(data); // Placeholder for form submission
-    setIsSubmitted(true);
-    reset();
-    setTimeout(() => setIsSubmitted(false), 3000); // Reset after 3 seconds
+  const onSubmit = async (data) => {
+    setIsLoading(true);
+    setMessage('');
+    setMessageType('');
+
+    try {
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setMessage('Form submitted successfully!');
+        setMessageType('success');
+        reset();
+      } else {
+        setMessage(result.message || 'An error occurred.');
+        setMessageType('error');
+      }
+    } catch (error) {
+      setMessage('Network error. Please try again.');
+      setMessageType('error');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -42,7 +69,6 @@ const PilotForm = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
-          animate={isSubmitted ? { boxShadow: '0 0 20px rgba(0, 255, 0, 0.5)' } : {}}
         >
           <div className={styles.field}>
             <label htmlFor="name" className={styles.label}>Name</label>
@@ -97,15 +123,20 @@ const PilotForm = () => {
             />
             {errors.message && <span className={styles.error}>{errors.message.message}</span>}
           </div>
+          {message && (
+            <div className={`${styles.message} ${styles[messageType]}`}>
+              {message}
+            </div>
+          )}
           <motion.button
             type="submit"
             className={styles.ctaButton}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            animate={isSubmitted ? { backgroundColor: '#00ff00', color: '#000' } : {}}
+            disabled={isLoading}
             transition={{ duration: 0.3 }}
           >
-            {isSubmitted ? 'Submitted!' : 'Request Pilot / Get Insights'}
+            {isLoading ? 'Submitting...' : 'Request Pilot / Get Insights'}
           </motion.button>
         </motion.form>
         <motion.p
