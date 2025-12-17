@@ -33,7 +33,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
-        Kscale Robotics: Scaling Interactions for Smarter Spaces
+        Boost Guest Satisfaction 20-30% in Less Than a Week
       </motion.h1>
       <motion.h2
         className={styles.subheadline}
@@ -41,7 +41,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.7 }}
       >
-        KBot: Your 24/7 Meet-and-Greet Robot—Boosting Engagement and Revenue in Hotels, Airports, and Shopping Centers
+        Discover KBot for hotels, airports, and shopping centers: Cut queue wait times 15-20% with 24/7 personalized support—save on staffing and streamline operations.
       </motion.h2>
       <motion.p
         className={styles.valueTeaser}
@@ -49,7 +49,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.9 }}
       >
-        Solve queue delays and staff gaps with fun, personalized AI—20-30% satisfaction lift. Request a Pilot Today.
+        Request a Pilot and See the 'Wow' Factor in Action.
       </motion.p>
       <motion.div
         className={styles.robotImage}

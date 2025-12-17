@@ -33,14 +33,12 @@ Key Sections:
 
 ## Section-by-Section Breakdown
 
-### Hero Section (10-15% Screen Height)
-**Design/UX:** Full-width background with subtle Kardashev energy swirl (blue glow) and lightning bolt motifs; centered official logo (`assets/images/logo.png`) with glow effects and content. Fluid pulse animation on load; lightweight parallax on scroll for depth. Mobile: Stack elements vertically for readability.
+### Hero Section (Above the Fold - 10-15% Screen Height)
+**Design/UX:** Full-width background with subtle energy swirl (blue glow); centered logo. Fluid animation: Glow pulse on load; modern parallax on scroll. Mobile: Stack for readability.
 **Content:**
-- Tagline: "Kscale Robotics: Scaling Interactions for Smarter Spaces"
-- Subheadline: "KBot: Your 24/7 Meet-and-Greet Robot—Boosting Engagement and Revenue in Hotels, Airports, and Shopping Centers"
-- Value Teaser: "Solve queue delays and staff gaps with fun, personalized AI—20-30% satisfaction lift. Request a Pilot Today."
-- CTA Button: "Explore KBot" (scrolls to next section) or "Request Pilot Demo" (opens modal form).
-**Visual:** Include the official logo (`assets/images/logo.png`) centered above the tagline, with a subtle glow effect. Illustration of KBot in a hotel lobby; subtle icons for pain points (e.g., queue line). Add alt text for logo: "Kscale Robotics Logo" and for illustration: "KBot robot greeting guests in a modern hotel setting."
+- Headline: "Boost Guest Satisfaction 20-30% in Less Than a Week" (Clear promise with proof, inspired by InvoiceOcean's "30 seconds").
+- Subheadline: "Discover KBot for hotels, airports, and shopping centers: Cut queue wait times 15-20% with 24/7 personalized support—save on staffing and streamline operations." (Targets ICP, speaks to pain, why it matters).
+- Value Teaser: "Request a Pilot and See the 'Wow' Factor in Action."
 
 ### Vision/About Section (20% Height)
 **Design/UX:** Two-column layout (text left, image right); elegant fade-in animations on scroll. Clean spacing with blue accents on key text. Mobile: Collapse to single column.
