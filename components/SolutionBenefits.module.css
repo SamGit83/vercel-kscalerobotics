@@ -121,6 +121,22 @@
   color: #555555;
 }
 
+.benefitsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefitsList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
 .robotImage {
   text-align: center;
 }
@@ -162,6 +178,10 @@
 
   .overallBenefits p {
     font-size: 1rem;
+  }
+
+  .benefitsList li {
+    font-size: 1.2rem;
   }
 
   .placeholder {
@@ -208,6 +228,10 @@
     font-size: 0.9rem;
   }
 
+  .benefitsList li {
+    font-size: 1rem;
+  }
+
   .placeholder {
     width: 150px;
     height: 150px;
@@ -250,6 +274,10 @@
 
   .overallBenefits p {
     font-size: 0.8rem;
+  }
+
+  .benefitsList li {
+    font-size: 0.9rem;
   }
 
   .placeholder {

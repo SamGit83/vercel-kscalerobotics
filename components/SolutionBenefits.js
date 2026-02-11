@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion, useInView } from 'framer-motion';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown, ChevronUp, Check } from 'lucide-react';
 import styles from './SolutionBenefits.module.css';
 
 const SolutionBenefits = () => {
@@ -28,7 +28,7 @@ const SolutionBenefits = () => {
     },
   ];
 
-  const overallBenefits = 'Easy customization; 15-17 inch screen for info/ads; scales to your needs—cut staff load, drive revenue.';
+  const overallBenefits = ['Easy customization', '15-17 inch screen for info/ads', 'scales to your needs—cut staff load, drive revenue.'];
 
   const toggleDemo = (index) => {
     setExpandedDemo(expandedDemo === index ? null : index);
@@ -82,12 +82,19 @@ const SolutionBenefits = () => {
         </div>
         <motion.div
           className={styles.overallBenefits}
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           <h3>Overall Benefits</h3>
-          <p>{overallBenefits}</p>
+          <ul className={styles.benefitsList}>
+            {overallBenefits.map((benefit, index) => (
+              <li key={index}>
+                <Check size={16} />
+                {benefit}
+              </li>
+            ))}
+          </ul>
         </motion.div>
         <motion.div
           className={styles.robotImage}
