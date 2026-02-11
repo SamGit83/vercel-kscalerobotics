@@ -28,7 +28,7 @@ const SolutionBenefits = () => {
     },
   ];
 
-  const overallBenefits = ['Easy customization', '15-17 inch screen for info/ads', 'scales to your needs—cut staff load, drive revenue.'];
+  const overallBenefits = ['Seamless integration with existing systems for enhanced operational efficiency. This allows quick deployment and adaptation to various industrial environments without disrupting workflows.', 'Large 15-17 inch interactive screen for clear information display and safety alerts. It provides intuitive navigation and emergency guidance, reducing confusion and improving user safety in busy settings.', 'Scalable deployment options that optimize staffing and boost revenue. By automating routine tasks, it frees up personnel for higher-value activities while generating additional income through targeted advertising.'];
 
   const toggleDemo = (index) => {
     setExpandedDemo(expandedDemo === index ? null : index);
