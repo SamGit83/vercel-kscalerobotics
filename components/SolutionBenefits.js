@@ -118,9 +118,12 @@ const SolutionBenefits = () => {
           >
             <ul className={styles.benefitsList}>
               {overallBenefits.map((benefit, index) => (
-                <li key={index}>
-                  <Check size={16} />
-                  <strong>{benefit.title}</strong> {benefit.description}
+                <li key={index} className={styles.benefitItem}>
+                  <Check size={16} className={styles.checkIcon} />
+                  <div className={styles.benefitContent}>
+                    <strong className={styles.benefitTitle}>{benefit.title}</strong>
+                    <span className={styles.benefitDescription}>{benefit.description}</span>
+                  </div>
                 </li>
               ))}
             </ul>
