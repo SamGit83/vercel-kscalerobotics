@@ -107,14 +107,14 @@
 }
 
 .exploreButton {
-  background-color: #007bff;
+  background-color: #073763;
   color: white;
-  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.35);
+  box-shadow: 0 4px 20px rgba(7, 55, 99, 0.35);
 }
 
 .exploreButton:hover {
   background-color: #0069d9;
-  box-shadow: 0 6px 28px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 6px 28px rgba(7, 55, 99, 0.5);
 }
 
 .requestButton {

@@ -15,7 +15,7 @@
 
 .benefitsSection {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
   margin-bottom: 40px;
 }
@@ -23,7 +23,7 @@
 .headline {
   font-size: 2rem;
   font-weight: 700;
-  color: #007bff;
+  color: #073763;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -55,13 +55,13 @@
 }
 
 .tab:hover {
-  background: rgba(0, 123, 255, 0.06);
-  border-color: #007bff;
+  background: rgba(7, 55, 99, 0.06);
+  border-color: #073763;
 }
 
 .tab.active {
-  background: rgba(0, 123, 255, 0.08);
-  border-color: #007bff;
+  background: rgba(7, 55, 99, 0.08);
+  border-color: #073763;
 }
 
 .chevron {
@@ -85,7 +85,7 @@
 }
 
 .demoButton {
-  background: #007bff;
+  background: #073763;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -118,8 +118,25 @@
 .overallBenefits h3 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #007bff;
+  color: #073763;
   margin-bottom: 20px;
+}
+
+.sectionTitle {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.sectionTitle h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #073763;
+  margin-bottom: 20px;
+}
+
+.benefitsListContainer {
+  text-align: left;
+  margin-bottom: 0;
 }
 
 .overallBenefits p {
@@ -156,7 +173,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: #007bff;
+  color: #073763;
   font-size: 1rem;
 }
 
@@ -239,6 +256,18 @@
     font-size: 1.3rem;
   }
 
+  .sectionTitle {
+    text-align: center;
+  }
+
+  .sectionTitle h3 {
+    font-size: 1.3rem;
+  }
+
+  .benefitsListContainer {
+    text-align: center;
+  }
+
   .overallBenefits p {
     font-size: 0.9rem;
   }
@@ -288,6 +317,10 @@
   }
 
   .overallBenefits h3 {
+    font-size: 1.2rem;
+  }
+
+  .sectionTitle h3 {
     font-size: 1.2rem;
   }
 

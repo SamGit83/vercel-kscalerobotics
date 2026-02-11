@@ -16,7 +16,7 @@
 .headline {
   font-size: 2rem;
   font-weight: 700;
-  color: #007bff;
+  color: #073763;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -68,8 +68,8 @@
 .select:focus,
 .textarea:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  border-color: #073763;
+  box-shadow: 0 0 8px rgba(7, 55, 99, 0.2);
 }
 
 .textarea {
@@ -104,7 +104,7 @@
 }
 
 .ctaButton {
-  background: #007bff;
+  background: #073763;
   color: white;
   border: none;
   padding: 15px 30px;

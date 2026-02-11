@@ -16,7 +16,7 @@
 .headline {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #007bff;
+  color: #073763;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -39,7 +39,7 @@
 }
 
 .icon {
-  color: #007bff;
+  color: #073763;
   margin-bottom: 20px;
 }
 
@@ -70,7 +70,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #007bff;
+  color: #073763;
   font-size: 0.9rem;
 }
 
