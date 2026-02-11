@@ -80,30 +80,32 @@ const SolutionBenefits = () => {
             </div>
           ))}
         </div>
-        <motion.div
-          className={styles.overallBenefits}
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.8, delay: 0.5 }}
-        >
-          <h3>Overall Benefits</h3>
-          <ul className={styles.benefitsList}>
-            {overallBenefits.map((benefit, index) => (
-              <li key={index}>
-                <Check size={16} />
-                {benefit}
-              </li>
-            ))}
-          </ul>
-        </motion.div>
-        <motion.div
-          className={styles.robotImage}
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={isInView ? { opacity: 1, scale: 1 } : {}}
-          transition={{ duration: 0.8, delay: 1 }}
-        >
-          <Image src="/robot.png" alt="KBot robot illustration" width={300} height={500} />
-        </motion.div>
+        <div className={styles.benefitsSection}>
+          <motion.div
+            className={styles.robotImage}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.8, delay: 1 }}
+          >
+            <Image src="/robot.png" alt="KBot robot illustration" width={300} height={500} />
+          </motion.div>
+          <motion.div
+            className={styles.overallBenefits}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.8, delay: 0.5 }}
+          >
+            <h3>Overall Benefits</h3>
+            <ul className={styles.benefitsList}>
+              {overallBenefits.map((benefit, index) => (
+                <li key={index}>
+                  <Check size={16} />
+                  {benefit}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

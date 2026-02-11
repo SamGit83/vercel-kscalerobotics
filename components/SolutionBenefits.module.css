@@ -13,6 +13,13 @@
   margin: 0 auto;
 }
 
+.benefitsSection {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
 .headline {
   font-size: 2rem;
   font-weight: 700;
@@ -104,8 +111,8 @@
 }
 
 .overallBenefits {
-  text-align: center;
-  margin-bottom: 40px;
+  text-align: left;
+  margin-bottom: 0;
 }
 
 .overallBenefits h3 {
@@ -138,7 +145,7 @@
 }
 
 .robotImage {
-  text-align: center;
+  flex-shrink: 0;
 }
 
 .placeholder {
@@ -220,12 +227,24 @@
     justify-content: center;
   }
 
+  .benefitsSection {
+    flex-direction: column;
+  }
+
+  .overallBenefits {
+    text-align: center;
+  }
+
   .overallBenefits h3 {
     font-size: 1.3rem;
   }
 
   .overallBenefits p {
     font-size: 0.9rem;
+  }
+
+  .robotImage {
+    text-align: center;
   }
 
   .benefitsList li {

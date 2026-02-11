@@ -28,11 +28,19 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+  gap: 15px;
 }
 
 .logo {
   width: 60px;
   height: 60px;
+  margin-left: -10px;
+}
+
+.companyName {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .menu {
@@ -86,6 +94,10 @@
     height: 50px;
   }
 
+  .companyName {
+    font-size: 16px;
+  }
+
   .menu {
     position: fixed;
     top: 60px;
@@ -127,6 +139,10 @@
   .logo {
     width: 40px;
     height: 40px;
+  }
+
+  .companyName {
+    font-size: 14px;
   }
 
   .menu {
