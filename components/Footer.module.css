@@ -1,6 +1,6 @@
 .footer {
-  background-color: #000;
-  color: #fff;
+  background-color: #1a1a2e;
+  color: #f0f0f0;
   padding: 3rem 0;
 }
 
@@ -26,13 +26,18 @@
 }
 
 .navLink {
-  color: #fff;
+  color: #cccccc;
   text-decoration: none;
   font-size: 16px;
   background: none;
   border: none;
   cursor: pointer;
   font-family: inherit;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #007bff;
 }
 
 .social {
@@ -41,9 +46,14 @@
 }
 
 .social a {
-  color: #fff;
+  color: #cccccc;
   text-decoration: none;
   font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: #007bff;
 }
 
 .copyright {

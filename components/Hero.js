@@ -26,7 +26,7 @@ const Hero = () => {
           src="/robot.png"
           alt="KBot robot in a hotel lobby"
           fill
-          style={{ objectFit: 'cover', objectPosition: 'center' }}
+          style={{ objectFit: 'cover', objectPosition: 'center 20%' }}
           priority
           quality={90}
         />

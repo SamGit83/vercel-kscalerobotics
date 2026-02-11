@@ -2,8 +2,8 @@
 
 .painPoints {
   width: 100%;
-  background: linear-gradient(135deg, #000011 0%, #001122 50%, #000011 100%);
-  color: white;
+  background: #ffffff;
+  color: #1a1a2e;
   font-family: 'Inter', sans-serif;
   padding: 80px 20px;
 }
@@ -28,13 +28,14 @@
 }
 
 .card {
-  background: rgba(0, 123, 255, 0.1);
-  border: 1px solid #007bff;
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
   border-radius: 10px;
   padding: 30px;
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .icon {
@@ -46,7 +47,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #1a1a2e;
 }
 
 .description {
@@ -54,7 +55,7 @@
   font-weight: 400;
   line-height: 1.6;
   margin-bottom: 20px;
-  color: #cccccc;
+  color: #555555;
 }
 
 .chartPlaceholder {
@@ -64,7 +65,7 @@
 .chart {
   width: 100%;
   height: 100px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 123, 255, 0.05);
   border-radius: 5px;
   display: flex;
   justify-content: center;

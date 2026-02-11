@@ -8,8 +8,8 @@
 
 html, body {
   font-family: 'Inter', sans-serif;
-  background-color: #0a0a0a; /* Dark blue/black */
-  color: #ffffff; /* White text */
+  background-color: #ffffff; /* Light background */
+  color: #1a1a2e; /* Dark text */
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scroll */
@@ -38,7 +38,7 @@ body {
   left: -10px;
   width: 20px;
   height: 20px;
-  background: linear-gradient(45deg, #007bff, #ffffff);
+  background: linear-gradient(45deg, #007bff, #1a1a2e);
   clip-path: polygon(50% 0%, 0% 100%, 50% 75%, 100% 100%);
   opacity: 0.5;
 }

@@ -2,8 +2,8 @@
 
 .solutionBenefits {
   width: 100%;
-  background: linear-gradient(135deg, #000011 0%, #001122 50%, #000011 100%);
-  color: white;
+  background: #f8f9fa;
+  color: #1a1a2e;
   font-family: 'Inter', sans-serif;
   padding: 80px 20px;
 }
@@ -31,28 +31,30 @@
 
 .tab {
   width: 100%;
-  background: rgba(0, 123, 255, 0.1);
-  border: 1px solid #007bff;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
   border-radius: 10px;
   padding: 20px;
   text-align: left;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #ffffff;
+  color: #1a1a2e;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .tab:hover {
-  background: rgba(0, 123, 255, 0.2);
+  background: rgba(0, 123, 255, 0.06);
+  border-color: #007bff;
 }
 
 .tab.active {
-  background: rgba(0, 123, 255, 0.3);
-  border-color: #0056b3;
+  background: rgba(0, 123, 255, 0.08);
+  border-color: #007bff;
 }
 
 .chevron {
@@ -61,7 +63,7 @@
 
 .content {
   overflow: hidden;
-  background: rgba(0, 123, 255, 0.05);
+  background: #ffffff;
   border-radius: 0 0 10px 10px;
   padding: 0 20px;
 }
@@ -71,7 +73,7 @@
   font-weight: 400;
   line-height: 1.6;
   margin-bottom: 20px;
-  color: #cccccc;
+  color: #555555;
   padding-top: 20px;
 }
 
@@ -96,9 +98,9 @@
 .demo {
   margin-top: 20px;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #f5f5f5;
   border-radius: 5px;
-  color: #ffffff;
+  color: #1a1a2e;
 }
 
 .overallBenefits {
@@ -116,7 +118,7 @@
 .overallBenefits p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #cccccc;
+  color: #555555;
 }
 
 .robotImage {
@@ -126,7 +128,7 @@
 .placeholder {
   width: 200px;
   height: 200px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 123, 255, 0.05);
   border-radius: 10px;
   display: inline-flex;
   justify-content: center;
