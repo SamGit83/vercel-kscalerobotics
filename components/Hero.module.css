@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
 .hero {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(135deg, #000011 0%, #001122 50%, #000011 100%);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -13,152 +10,155 @@
   color: white;
   font-family: 'Inter', sans-serif;
   text-align: center;
-  padding: 20px;
+  /* Pull the hero up behind the fixed nav (80px body padding-top) */
+  margin-top: -80px;
 }
 
-.backgroundSwirl {
+/* Full-screen background image container */
+.backgroundImage {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 20% 80%, rgba(0, 123, 255, 0.2) 0%, transparent 50%),
-              radial-gradient(circle at 80% 20%, rgba(0, 123, 255, 0.15) 0%, transparent 50%),
-              radial-gradient(circle at 40% 40%, rgba(0, 123, 255, 0.1) 0%, transparent 50%);
-  animation: glowPulse 3s ease-in-out infinite alternate;
+  z-index: 0;
 }
 
-@keyframes glowPulse {
-  0% { opacity: 0.8; }
-  100% { opacity: 1; }
-}
-
-.logo {
+/* Dark gradient overlay for text readability */
+.overlay {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.45) 40%,
+    rgba(0, 0, 0, 0.55) 70%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
   z-index: 1;
 }
 
-.logo img {
-  width: 150px;
-  height: 150px;
+/* Content wrapper — sits on top of overlay */
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  padding: 0 40px;
+  /* Offset slightly down to account for nav overlap */
+  padding-top: 80px;
 }
 
 .tagline {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  z-index: 1;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
 
 .subheadline {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 400;
-  margin-bottom: 20px;
-  max-width: 600px;
-  z-index: 1;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+  max-width: 650px;
+  opacity: 0.92;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
 }
 
 .valueTeaser {
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 30px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 0 40px 0;
   max-width: 500px;
-  z-index: 1;
-}
-
-.robotImage {
-  margin-bottom: 30px;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
+  opacity: 0.88;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
 }
 
 .ctaContainer {
   display: flex;
-  gap: 20px;
-  z-index: 1;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .ctaButton {
-  padding: 12px 24px;
+  padding: 14px 32px;
   font-size: 1rem;
   font-weight: 600;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  letter-spacing: 0.01em;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
 }
 
 .exploreButton {
   background-color: #007bff;
   color: white;
+  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.35);
 }
 
 .exploreButton:hover {
-  background-color: #0056b3;
+  background-color: #0069d9;
+  box-shadow: 0 6px 28px rgba(0, 123, 255, 0.5);
 }
 
 .requestButton {
-  background-color: transparent;
-  color: #007bff;
-  border: 2px solid #007bff;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
 }
 
 .requestButton:hover {
-  background-color: #007bff;
-  color: white;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.9);
 }
 
-/* Mobile responsive */
+/* ─── Tablet (≤ 768px) ─── */
 @media (max-width: 768px) {
   .hero {
-    padding: 40px 20px 20px 20px;
-    height: auto;
+    height: 100vh;
     min-height: 100vh;
-    justify-content: flex-start;
+    margin-top: -60px; /* mobile nav is 60px */
   }
 
-  .logo {
-    position: static;
-    margin-bottom: 40px;
-    margin-top: 20px;
-    width: 60px;
-    height: 60px;
-  }
-
-  .logo img {
-    width: 60px;
-    height: 60px;
+  .content {
+    padding: 60px 24px 0;
   }
 
   .tagline {
-    font-size: 1.2rem;
-    line-height: 1.3;
-    margin-top: 0;
+    font-size: 2.2rem;
   }
 
   .subheadline {
-    font-size: 1rem;
-    line-height: 1.4;
+    font-size: 1.05rem;
   }
 
   .valueTeaser {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-
-  .robotImage img {
-    width: 200px;
-    height: 300px;
+    font-size: 0.95rem;
+    margin-bottom: 32px;
   }
 
   .ctaContainer {
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
     width: 100%;
-    padding: 0 20px;
+    max-width: 320px;
   }
 
   .ctaButton {
@@ -166,24 +166,29 @@
     padding: 16px 24px;
     font-size: 1rem;
   }
-
-  .hero {
-    text-align: center !important;
-  }
 }
 
-/* Extra small devices */
+/* ─── Small phones (≤ 480px) ─── */
 @media (max-width: 480px) {
+  .hero {
+    margin-top: -50px; /* extra-small nav is 50px */
+  }
+
+  .content {
+    padding: 50px 20px 0;
+  }
+
   .tagline {
-    font-size: 1rem;
+    font-size: 1.75rem;
   }
 
   .subheadline {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .valueTeaser {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    margin-bottom: 28px;
   }
 
   .ctaButton {
