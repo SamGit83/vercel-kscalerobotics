@@ -31,7 +31,7 @@ const SolutionBenefits = () => {
   const overallBenefits = [
     {
       title: 'Seamless Integration',
-      description: 'with existing systems for enhanced operational efficiency. This allows quick deployment and adaptation to various industrial environments without disrupting workflows.'
+      description: 'With existing systems for enhanced operational efficiency. This allows quick deployment and adaptation to various industrial environments without disrupting workflows.'
     },
     {
       title: 'Interactive Display',
@@ -39,7 +39,7 @@ const SolutionBenefits = () => {
     },
     {
       title: 'Scalable Deployment',
-      description: 'options that optimize staffing and boost revenue. By automating routine tasks, it frees up personnel for higher-value activities while generating additional income through targeted advertising.'
+      description: 'Options that optimize staffing and boost revenue. By automating routine tasks, it frees up personnel for higher-value activities while generating additional income through targeted advertising.'
     }
   ];
 
