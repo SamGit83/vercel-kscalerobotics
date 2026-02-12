@@ -164,8 +164,8 @@
 
 .contactDropdown {
  position: absolute;
- top: 80px;
- right: 20px;
+ top: 100%;
+ right: 0;
  background-color: #ffffff;
  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
  display: flex;
@@ -190,15 +190,15 @@
 
 @media (max-width: 768px) {
  .contactDropdown {
-   top: 60px;
-   right: 15px;
+   top: 100%;
+   right: 0;
  }
 }
 
 @media (max-width: 480px) {
  .contactDropdown {
-   top: 50px;
-   right: 10px;
+   top: 100%;
+   right: 0;
    padding: 10px;
  }
 }

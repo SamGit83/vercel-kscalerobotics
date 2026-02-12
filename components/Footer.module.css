@@ -161,7 +161,15 @@
   }
 }
 
+.contactWrapper {
+  position: relative;
+}
+
 .contactDropdown {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #1a1a2e;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -170,7 +178,7 @@
   padding: 15px;
   border-radius: 8px;
   z-index: 1001;
-  margin-top: 10px;
+  margin-bottom: 8px;
 }
 
 .dropdownLink {
@@ -184,15 +192,7 @@
   color: #073763;
 }
 
-@media (min-width: 768px) {
-  .contactDropdown {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 0;
-  }
-}
+
 
 @media (max-width: 768px) {
   .contactDropdown {

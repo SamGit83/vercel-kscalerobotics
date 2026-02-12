@@ -8,6 +8,7 @@ export default function Navigation() {
   const [isVisible, setIsVisible] = useState(true);
   const [isContactOpen, setIsContactOpen] = useState(false);
   const lastScrollY = useRef(0);
+  const contactRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +23,16 @@ export default function Navigation() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (contactRef.current && !contactRef.current.contains(event.target)) {
+        setIsContactOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
   const scrollToSection = (id) => {
@@ -46,14 +57,16 @@ export default function Navigation() {
         <div className={`${styles.menu} ${isMenuOpen ? styles.menuOpen : ''}`}>
           <Link href="/" className={styles.navLink}>Home</Link>
           <button onClick={() => scrollToSection('pilot-form')} className={styles.navLink}>About</button>
-          <button onClick={() => setIsContactOpen(!isContactOpen)} className={styles.navLink}>Contact</button>
-        </div>
-        {isContactOpen && (
-          <div className={styles.contactDropdown}>
-            <a href="https://linkedin.com/company/kscale-robotics" target="_blank" rel="noopener noreferrer" className={styles.dropdownLink}>LinkedIn</a>
-            <a href="https://x.com/kscalerobotics" target="_blank" rel="noopener noreferrer" className={styles.dropdownLink}>X</a>
+          <div ref={contactRef} style={{ position: 'relative' }}>
+            <button onClick={() => setIsContactOpen(!isContactOpen)} className={styles.navLink}>Contact</button>
+            {isContactOpen && (
+              <div className={styles.contactDropdown}>
+                <a href="https://linkedin.com/company/kscale-robotics" target="_blank" rel="noopener noreferrer" className={styles.dropdownLink}>LinkedIn</a>
+                <a href="https://x.com/kscalerobotics" target="_blank" rel="noopener noreferrer" className={styles.dropdownLink}>X</a>
+              </div>
+            )}
           </div>
-        )}
+        </div>
         <button className={styles.hamburger} onClick={toggleMenu} aria-label="Toggle menu">
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
