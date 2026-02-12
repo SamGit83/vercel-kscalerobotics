@@ -60,7 +60,7 @@ const PilotForm = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Join our pilots for KBot—get early access and shape the future. Tell us your challenges.
+          Join our pilots for KBot. Get early access and shape the future. Tell us your challenges.
         </motion.p>
         <motion.form
           className={styles.form}
