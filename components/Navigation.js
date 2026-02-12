@@ -61,8 +61,8 @@ export default function Navigation() {
             <button onClick={() => setIsContactOpen(!isContactOpen)} className={styles.navLink}>Contact</button>
             {isContactOpen && (
               <div className={styles.contactDropdown}>
-                <a href="https://linkedin.com/company/kscale-robotics" target="_blank" rel="noopener noreferrer" className={styles.dropdownLink}>LinkedIn</a>
-                <a href="https://x.com/kscalerobotics" target="_blank" rel="noopener noreferrer" className={styles.dropdownLink}>X</a>
+                <a href="https://linkedin.com/company/kscale-robotics" target="_blank" rel="noopener noreferrer" className={styles.dropdownLink}>in LinkedIn</a>
+                <a href="https://x.com/kscalerobotics" target="_blank" rel="noopener noreferrer" className={styles.dropdownLink}>𝕏 X</a>
               </div>
             )}
           </div>
