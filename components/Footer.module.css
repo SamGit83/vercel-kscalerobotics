@@ -13,6 +13,7 @@
   text-align: center;
   padding: 0 20px;
   gap: 1.5rem;
+  position: relative;
 }
 
 .logo {
@@ -157,5 +158,50 @@
 
   .copyright {
     font-size: 10px;
+  }
+}
+
+.contactDropdown {
+  background-color: #1a1a2e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 1001;
+  margin-top: 10px;
+}
+
+.dropdownLink {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.dropdownLink:hover {
+  color: #073763;
+}
+
+@media (min-width: 768px) {
+  .contactDropdown {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactDropdown {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactDropdown {
+    padding: 8px;
   }
 }

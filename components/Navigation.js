@@ -6,6 +6,7 @@ import styles from './Navigation.module.css';
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
+  const [isContactOpen, setIsContactOpen] = useState(false);
   const lastScrollY = useRef(0);
 
   useEffect(() => {
@@ -45,8 +46,14 @@ export default function Navigation() {
         <div className={`${styles.menu} ${isMenuOpen ? styles.menuOpen : ''}`}>
           <Link href="/" className={styles.navLink}>Home</Link>
           <button onClick={() => scrollToSection('pilot-form')} className={styles.navLink}>About</button>
-          <button onClick={() => scrollToSection('pilot-form')} className={styles.navLink}>Contact</button>
+          <button onClick={() => setIsContactOpen(!isContactOpen)} className={styles.navLink}>Contact</button>
         </div>
+        {isContactOpen && (
+          <div className={styles.contactDropdown}>
+            <a href="https://linkedin.com/company/kscale-robotics" target="_blank" rel="noopener noreferrer" className={styles.dropdownLink}>LinkedIn</a>
+            <a href="https://x.com/kscalerobotics" target="_blank" rel="noopener noreferrer" className={styles.dropdownLink}>X</a>
+          </div>
+        )}
         <button className={styles.hamburger} onClick={toggleMenu} aria-label="Toggle menu">
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
