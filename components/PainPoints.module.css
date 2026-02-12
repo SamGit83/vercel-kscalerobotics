@@ -58,6 +58,15 @@
   color: #555555;
 }
 
+.overall {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 40px;
+  color: #073763;
+  line-height: 1.6;
+}
+
 .chartPlaceholder {
   margin-top: 20px;
 }
@@ -141,6 +150,11 @@
     line-height: 1.4;
   }
 
+  .overall {
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+
   .chart {
     height: 80px;
     font-size: 0.8rem;
@@ -173,6 +187,11 @@
 
   .description {
     font-size: 0.8rem;
+  }
+
+  .overall {
+    font-size: 0.9rem;
+    margin-top: 20px;
   }
 
   .chart {

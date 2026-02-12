@@ -51,7 +51,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
-          Discover KBot for hotels, airports, and shopping centers: Cut queue wait times 15-20% with 24/7 personalized support—save on staffing and streamline operations.
+          Discover KBot for hotels, airports, and shopping centers: Cut queue wait times 15-20% with 24/7 personalized support. Save on staffing and streamline operations.
         </motion.h2>
         <motion.p
           className={styles.valueTeaser}

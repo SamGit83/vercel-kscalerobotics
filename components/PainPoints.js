@@ -11,22 +11,17 @@ const PainPoints = () => {
     {
       icon: <Clock size={48} />,
       title: 'Hotel Pain',
-      description: 'Long queues and late-night gaps reduce guest satisfaction—15-20% time wasted on queries.',
+      description: 'Long queues and late-night gaps reduce guest satisfaction. 15-20% time wasted on queries.',
     },
     {
       icon: <Users size={48} />,
       title: 'Airport/Lounge Pain',
-      description: 'Flight delays and navigation frustration lead to stressed travelers—25% time lost in crowds.',
+      description: 'Flight delays and navigation frustration lead to stressed travelers. 25% time lost in crowds.',
     },
     {
       icon: <ShoppingBag size={48} />,
       title: 'Shopping Center Pain',
-      description: 'Declining traffic and bland interactions cut retention—15-20% post-COVID drops.',
-    },
-    {
-      icon: <TrendingDown size={48} />,
-      title: 'Overall',
-      description: 'These pains cost businesses €50k+ annually in lost revenue—KBot turns them into opportunities.',
+      description: 'Declining traffic and bland interactions cut retention. 15-20% post-COVID drops.',
     },
   ];
 
@@ -61,6 +56,14 @@ const PainPoints = () => {
             </motion.div>
           ))}
         </div>
+        <motion.p
+          className={styles.overall}
+          initial={{ opacity: 0, y: 50 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          These pains cost businesses €50k+ annually in lost revenue. KBot turns them into opportunities.
+        </motion.p>
       </div>
     </section>
   );

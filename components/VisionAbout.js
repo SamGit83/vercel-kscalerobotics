@@ -17,10 +17,10 @@ const VisionAbout = () => {
         >
           <h2 className={styles.headline}>Our Vision: Inspired by the Kardashev Scale</h2>
           <p className={styles.body}>
-            At Kscale Robotics AB, we harness energy for boundless interactions. Starting with KBot, we transform high-traffic spaces like hotels and airports—solving real pains with AI-driven support and 'wow' moments that keep guests coming back.
+            At Kscale Robotics AB, we harness energy for boundless interactions. Starting with KBot, we transform high-traffic spaces like hotels and airports by solving real pains with AI-driven support and 'wow' moments that keep guests coming back.
           </p>
           <p className={styles.icp}>
-            For hotels facing late-night queues, airports with flight delays, and shopping centers with low traffic—we deliver value that scales your business.
+            For hotels facing late-night queues, airports with flight delays, and shopping centers with low traffic: We deliver value that scales your business.
           </p>
         </motion.div>
         <motion.div

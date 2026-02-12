@@ -13,17 +13,17 @@ const SolutionBenefits = () => {
   const icps = [
     {
       title: 'Hotels',
-      description: '24/7 support guides guests to rooms/amenities—boosts satisfaction 20-30%, with ad revenue from partners.',
+      description: '24/7 support guides guests to rooms/amenities. Boosts satisfaction 20-30%, with ad revenue from partners.',
       demo: 'Interactive demo placeholder for Hotels.',
     },
     {
       title: 'Airports/Lounges',
-      description: 'Real-time flight info and gate guidance—reduces delays 15-20%, summonable for personalized help.',
+      description: 'Real-time flight info and gate guidance. Reduces delays 15-20%, summonable for personalized help.',
       demo: 'Interactive demo placeholder for Airports/Lounges.',
     },
     {
       title: 'Shopping Centers',
-      description: 'Fun interactions and local ads increase traffic 20-30%—creates \'wow\' moments for better retention.',
+      description: 'Fun interactions and local ads increase traffic 20-30%. Creates \'wow\' moments for better retention.',
       demo: 'Interactive demo placeholder for Shopping Centers.',
     },
   ];
