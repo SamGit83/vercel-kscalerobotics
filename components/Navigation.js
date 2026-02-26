@@ -56,7 +56,7 @@ export default function Navigation() {
         </Link>
         <div className={`${styles.menu} ${isMenuOpen ? styles.menuOpen : ''}`}>
           <Link href="/" className={styles.navLink}>Home</Link>
-          <button onClick={() => scrollToSection('pilot-form')} className={styles.navLink}>About</button>
+          <Link href="/about" className={styles.navLink}>About</Link>
           <div ref={contactRef} style={{ position: 'relative' }}>
             <button onClick={() => setIsContactOpen(!isContactOpen)} className={styles.navLink}>Contact</button>
             {isContactOpen && (
