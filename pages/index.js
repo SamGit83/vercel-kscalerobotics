@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Hero from '../components/Hero';
-import VisionAbout from '../components/VisionAbout';
 import PainPoints from '../components/PainPoints';
 import SolutionBenefits from '../components/SolutionBenefits';
 import HowItWorks from '../components/HowItWorks';
@@ -22,7 +21,6 @@ export default function Home() {
         <link rel="canonical" href="https://kscalerobotics.com" />
       </Head>
       <Hero />
-      <VisionAbout />
       <PainPoints />
       <SolutionBenefits />
       <HowItWorks />

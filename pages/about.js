@@ -3,6 +3,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import PilotForm from '../components/PilotForm';
 
 export default function About() {
   const visionRef = useRef(null);
@@ -141,7 +142,7 @@ export default function About() {
               }}>
                 We envision a world where robotics seamlessly integrates into everyday life, 
                 handling the mundane so humans can pursue the extraordinary. Our inspiration 
-                comes from the Kardashev Scale — a measure of civilizational advancement based 
+                comes from the Kardashev Scale: a measure of civilizational advancement based 
                 on energy utilization. We're committed to pushing humanity toward Type 1 status 
                 by creating intelligent systems that amplify our capabilities.
               </p>
@@ -226,7 +227,7 @@ export default function About() {
                 We believe that the true value of robotics lies not in replacing humans, but 
                 in augmenting human capabilities. By automating repetitive and physically demanding 
                 tasks, we enable people to dedicate their time and energy to work that requires 
-                creativity, strategic thinking, and human connection—the things that truly matter.
+                creativity, strategic thinking, and human connection - the things that truly matter.
               </p>
             </div>
           </motion.div>
@@ -265,7 +266,7 @@ export default function About() {
               passionate about the future of robotics, we'd love to hear from you.
             </p>
             <a 
-              href="mailto:hello@kscalerobotics.com"
+              href="#pilot-form"
               style={{
                 display: 'inline-block',
                 padding: '14px 32px',
@@ -292,6 +293,8 @@ export default function About() {
             </a>
           </motion.div>
         </section>
+
+        <PilotForm />
       </main>
 
       <Footer />
