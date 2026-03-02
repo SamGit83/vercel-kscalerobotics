@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -14,6 +15,14 @@ export default function Footer() {
             </svg>
           </a>
           <a href="https://x.com/kscalerobotics" target="_blank" rel="noopener noreferrer">𝕏</a>
+        </div>
+        <div className={styles.nav}>
+          <Link href="/terms-of-service" className={styles.navLink}>
+            Terms of Service
+          </Link>
+          <Link href="/privacy-policy" className={styles.navLink}>
+            Privacy Policy
+          </Link>
         </div>
         <p className={styles.copyright}>© 2025 Kscale Robotics AB</p>
       </div>
